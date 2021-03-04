@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import moment from 'moment';
 import useLocalStorage from '../hooks/useLocalStorage';
@@ -28,11 +28,6 @@ export function Post({ post }: any) {
 		setUpdate(update + 1);
 		history.go(0); // Refresh page because i cant find a better way
 	};
-
-	// Remove post from local storage on posts array change
-	useEffect(() => {
-		localStorage.removeItem(post.id);
-	}, [update, post.id, history]);
 
 	return (
 		<>
