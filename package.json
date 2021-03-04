@@ -1,5 +1,5 @@
 {
-  "name": "user-system",
+  "name": "egg-chat",
   "version": "1.0.0",
   "description": "",
   "main": "dist/server.ts",
@@ -13,8 +13,10 @@
   "author": "saubuny",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.6.0",
     "express": "^4.17.1",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "react-bootstrap": "^1.5.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.11",
